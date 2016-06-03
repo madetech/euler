@@ -1,4 +1,3 @@
-
 # (10, 100, 1) = 91
 # (10, 100, 2) = 327
 # (10, 100, 3) = 1135
@@ -40,7 +39,7 @@ class Euler350
     gcd = [1]
     numbers.first.each do |factor|
       if numbers.all? { |factors| factors.include?(factor) }
-        numbers.each { |factors| factors.delete(factor) }
+        numbers.each { |factors| factors.slice(factor) }
         gcd.push(factor)
       end
     end

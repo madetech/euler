@@ -1,4 +1,4 @@
-require_relative './euler_350'
+require_relative '../euler_350'
 require 'pry'
 
 # (10, 100, 1) = 91
@@ -33,7 +33,7 @@ describe 'Euler350' do
   context 'when calculating greatest common divisor' do
     context 'and given two numbers' do
       it 'returns their greatest common divisor' do
-        # expect(Euler350.greatest_common_divisor([5,95])).to eq(5)
+        expect(Euler350.greatest_common_divisor([5,95])).to eq(5)
         expect(Euler350.greatest_common_divisor([18,27])).to eq(9)
         expect(Euler350.greatest_common_divisor([3,7])).to eq(1)
       end
